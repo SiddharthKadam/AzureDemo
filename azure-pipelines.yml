@@ -10,15 +10,5 @@ pool:
   name: Default
 
 steps:
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      echo "Starting Build Pipeline"
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      echo "✅ Push Notification: Build Successful!"
+- script: echo "Hello, this is a default pipeline running on the main branch."
+  displayName: 'Run default script'
